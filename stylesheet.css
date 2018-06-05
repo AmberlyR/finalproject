@@ -1,0 +1,104 @@
+ * {margin: 0; padding: 0;}
+                
+              
+/* Main Elements */
+            body {
+                background-color: lightgray;
+                margin: 15px auto;
+                font-family: sans-serif;}  
+                
+            h1, h2 {text-decoration: underline; 
+                padding 10px;}
+                
+            header {     
+                padding: 5px; 
+                border-bottom: 2px solid white;
+                }
+          
+            nav {text-align: center;
+                    }
+              
+            section {
+                height: 200px;
+                width: 75%;
+                color: goldenrod; 
+                float: left;}
+
+            section > div {
+                float:left;
+                width: 50%;
+                padding:10px;               
+                box-sizing:border-box;
+                }
+
+            aside {
+                height: 200px;
+                width: 25%;
+                padding:10px;
+                float: left; 
+                box-sizing:border-box;
+                color: goldenrod;}  
+              
+            footer {
+                position: absolute;
+                right: 0; 
+                bottom: 0;
+                left: 0;
+                padding: 1rem;
+                clear: both;
+                text-align: center;
+                background-color: cadetblue;
+                color: white;
+              }
+            
+            ul { list-style-type: none; 
+            }
+  
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.selfie {border-radius: 50%;
+    padding:1px;
+    border:3px solid #021a40;
+    filter: grayscale(100%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+tr, td {padding: 3px; 
+            margin: 2px; }
+    
+tr {color: white; 
+        background-color: darkgray;}
+
+/* ---- Navigation ---- */
+
+.main-nav li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px; 
+    margin-right: 25px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #fff;
+	text-transform: uppercase;
+    padding: 10px 15px;
+	display: inline-block;  
+    text-align: center;
+}
+
+.main-nav a:hover {
+	opacity: 75%;
+
+nav a:visited {
+    color: cadetblue; 
+    font-size: .95em; }
+               
