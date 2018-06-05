@@ -101,4 +101,32 @@ tr {color: white;
 nav a:visited {
     color: cadetblue; 
     font-size: .95em; }
+    
+    
+    
+    
+    
+    
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+    
+    .container {
+		width: 80%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+    
+    .main-nav,
+	.main-nav li {
+		display: inline-block;
+        margin-right: 12px;
+	}
+
                
