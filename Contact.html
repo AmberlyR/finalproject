@@ -5,46 +5,33 @@
 <title>Contact Me</title>
 </head>
 
-<body>
+<body id="form-body">
 <div class="wrap">    
 <h1>Contact Me</h1>
 <form action="script.html" method="post">
     <table>
      <tr>
         <td>Name</td>
-        <td><input type="text" name="customername" value=""></td>
+        <td><input type="text" id="name" name="customername" value=""></td>
     </tr>
       
      <tr>
         <td>Email</td>
-        <td><input type="text" name="customeremail" value=""></td>
+        <td><input type="text" id="email" name="customeremail" value=""></td>
     </tr>
       
     <tr>
         <td>Comments</td>
-        <td><textarea columns="50" rows="5" name="comments"></textarea></td>
+        <td><textarea id="comments" columns="50" rows="5" name="comments"></textarea></td>
     </tr>
-    
+  
     <tr>
-        <td>Rating</td>
-        <td><select name="rating">
-            <option value="5">*****</option>
-            <option value="4">****</option>
-            <option value="3">***</option>
-            <option value="2">**</option>
-            <option value="1">*</option>
-            </select></td>
-    </tr>
-     <tr>
-        <td>Contact</td>
-        <td>Yes  <input type="radio" name="contact" value="yes"checked>
-            No   <input type="radio" name="contact" value="no"></td> 
-    </tr>
-    <tr>
-        <td colspan="2" align="center"><input type="submit" value="submit"></td>
-      </tr> 
-</table>  
-</form>    
+        <td colspan="2" align="center">
+        <button type="submit" id="submit" value="submit">SUBMIT</button>
+    </tr> 
+
+    </table>  
+    </form>    
     </div>        
 </body>
 </html>

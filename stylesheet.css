@@ -3,11 +3,12 @@
               
 /* Main Elements */
             body {
-                background-color: lightgray;
+                text-align: center; 
+                background-color: rgb(251, 235, 225);
                 margin: 15px auto;
                 font-family: sans-serif;}  
                 
-            h1, h2 {text-decoration: underline; 
+            h1, h2 {text-decoration: none; 
                 padding 10px;}
                 
             header {     
@@ -21,7 +22,6 @@
             section {
                 height: 200px;
                 width: 75%;
-                color: goldenrod; 
                 float: left;}
 
             section > div {
@@ -29,6 +29,7 @@
                 width: 50%;
                 padding:10px;               
                 box-sizing:border-box;
+                color: #8a97a0;
                 }
 
             aside {
@@ -37,17 +38,17 @@
                 padding:10px;
                 float: left; 
                 box-sizing:border-box;
-                color: goldenrod;}  
+                color: 8a97a0;}  
               
             footer {
-                position: absolute;
+                position: fixed;
                 right: 0; 
                 bottom: 0;
                 left: 0;
                 padding: 1rem;
                 clear: both;
                 text-align: center;
-                background-color: cadetblue;
+                background-color: lightgray;
                 color: white;
               }
             
@@ -69,12 +70,6 @@
 }
 
 
-tr, td {padding: 3px; 
-            margin: 2px; }
-    
-tr {color: white; 
-        background-color: darkgray;}
-
 /* ---- Navigation ---- */
 
 .main-nav li {
@@ -88,7 +83,7 @@ tr {color: white;
 
 .main-nav a {
 	font-size: .95em;
-	color: #fff;
+	color: #8a97a0;
 	text-transform: uppercase;
     padding: 10px 15px;
 	display: inline-block;  
@@ -97,20 +92,76 @@ tr {color: white;
 
 .main-nav a:hover {
 	opacity: 75%;
+}
 
 nav a:visited {
-    color: cadetblue; 
+    color: lightgray; 
     font-size: .95em; }
     
     
+/* ================================= 
+  Contact Page Styles
+==================================== */
+.wrap{
+    text-align: center;
+    width: 100%; 
+    }
     
+form { 
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 30%;
+  margin: 10px auto;
+  padding: 10px 20px;
+} 
+
+/* figure out how to make this form look better....
+#name, #email, #comments { 
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 5px;
+  width: 100%;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 15px;
+}  
+*/
     
-    
-    
+tr, td {   
+    text-align: center; 
+    padding: 3px;         
+    margin: 2px; 
+    color: white; 
+    }
+
+button {
+  padding: 5px;
+  color: #8a97a0;
+  background-color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 50%;
+  border: 1px solid lightgrey;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 5px;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 
+@media screen and (min-width: 480px) {
+
+  form {
+      max-width: 480px;}
+    }
+    
 @media (min-width: 769px) {
 
 	.wrap {
@@ -127,6 +178,4 @@ nav a:visited {
 	.main-nav li {
 		display: inline-block;
         margin-right: 12px;
-	}
-
-               
+    }}           
