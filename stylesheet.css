@@ -1,7 +1,11 @@
- * {margin: 0; padding: 0;}
+ * {box-sizing: border-box;
+     margin: 0; 
+     padding: 0;
+    }
                 
               
 /* Main Elements */
+
             body {
                 text-align: center; 
                 background-color: rgb(251, 235, 225);
@@ -30,15 +34,7 @@
                 padding:10px;               
                 box-sizing:border-box;
                 color: #8a97a0;
-                }
-
-            aside {
-                height: 200px;
-                width: 25%;
-                padding:10px;
-                float: left; 
-                box-sizing:border-box;
-                color: 8a97a0;}  
+                }  
               
             footer {
                 position: fixed;
@@ -115,8 +111,8 @@ form {
   padding: 10px 20px;
 } 
 
-/* figure out how to make this form look better....
-#name, #email, #comments { 
+input {
+    width: 100%;
   border: none;
   font-size: 16px;
   height: auto;
@@ -127,8 +123,7 @@ form {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 15px;
-}  
-*/
+}
     
 tr, td {   
     text-align: center; 
@@ -152,6 +147,16 @@ button {
   margin-bottom: 5px;
 }
 
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+    
+}
 /* ================================= 
   Media Queries
 ==================================== */
@@ -179,3 +184,7 @@ button {
 		display: inline-block;
         margin-right: 12px;
     }}           
+
+/*
+@media screen and (min-width: 480px) {#leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}}*/
