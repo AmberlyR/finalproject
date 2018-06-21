@@ -21,40 +21,20 @@
 
 
 <body id="form-body">
-	  
-<h1>Contact Me</h1>
-    
-<div class="contact"> 
-    <form action="script.html" method="post">
-    
-    <table>
-     <tr>
-        <td>Name</td>
-        <td><input type="text" id="name" name="customername" value=""></td>
-    </tr>
-      
-     <tr>
-        <td>Email</td>
-        <td><input type="text" id="email" name="customeremail" value=""></td>
-    </tr>
-      
-    <tr>
-        <td>Comments</td>
-        <td><textarea id="comments" columns="50" rows="5" name="comments"></textarea></td>
-    </tr> 
+	      
+<form action="index.html" method="post">
         
-    <tr><select name="Reason for contacting me:">
-      <option value="great">You're great!</option>
-      <option value="bad">You're not so great!</option>
-      <option value="cute">You're cute!</option>
-      <option value="dogs">Your dogs are cute!</option>
-    </select>
-        </tr>    
-    </table> 
+        <h1>Contact Me</h1>
+        
+        <input type="text" id="name" name="name">
+        <input type="email" id="mail" name="email">
+        
+        <textarea id="comment" name="comment"></textarea>
+        
+        <button type="submit">Submit</button>
+        
+      </form>    
 
-    <button type="submit" id="submit" value="submit">SUBMIT</button>
-    </form>           
-</div>
     
 <script src="javascript.js"></script> 
 <script src="jquery.js"></script>  
